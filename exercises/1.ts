@@ -79,4 +79,5 @@ const detail = (item: Student | Course): string => {
   }
 }
 
+// TODO: run your function on one of your courses and print the results!
 console.log(detail(ood));
