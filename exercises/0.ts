@@ -31,9 +31,10 @@ type Address = {
   state: string;
 }
 
-function doxx(s: Student, addy?: Address) {
+function doxx(s: Student, addy?: Address): string {
   console.log(`${s.name} is a ${s.year} at Northeastern and has student ID ${s.id}.`);
   console.log(`They live at ${addy.streetNumber} ${addy.street} in ${addy.city}, ${addy.state}.`);
+  return s.id;
 }
 
 const you: Student = {
