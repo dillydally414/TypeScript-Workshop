@@ -18,7 +18,7 @@ const foo = (bar: number): void => {
 
 foo(arrStr);
 
-type Student = {
+export type Student = {
   name: string;
   year: "first" | "second" | "third" | "fourth" | "fifth";
   id?: string;
@@ -37,7 +37,7 @@ function doxx(s: Student, addy?: Address): string {
   return s.id;
 }
 
-const you: Student = {
+export const you: Student = {
 
 }
 
