@@ -6,3 +6,6 @@
 - Open that folder in VSCode and open a new terminal in VSCode.
 - Run `npm i` -- This will download all the dependencies necessary to use TypeScript within this workspace.
 
+## Running a File
+
+-- Run `ts-node {file}` in the terminal
