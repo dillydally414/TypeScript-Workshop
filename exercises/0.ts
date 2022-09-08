@@ -7,13 +7,12 @@
  */
 
 
-const arr: Array<string> = [33, 120, 111, 98, 100, 110, 97, 83, 32, 111, 116, 32, 101, 109, 111, 99, 108, 101, 87];
+let arr: Array<number> = [33, 120, 111, 98, 100, 110, 97, 83, 32, 111, 116, 32, 101, 109, 111, 99, 108, 101, 87];
 arr = arr.reverse();
 const arrStr: string = String.fromCharCode(...arr);
 
-const foo = (bar: number): void => {
+const foo = (bar: string): void => {
   console.log(bar);
-  return true;
 }
 
 foo(arrStr);
@@ -31,13 +30,17 @@ type Address = {
   state: string;
 }
 
-function doxx(s: Student, addy?: Address) {
+function doxx(s: Student, addy?: Address): string {
   console.log(`${s.name} is a ${s.year} at Northeastern and has student ID ${s.id}.`);
-  console.log(`They live at ${addy.streetNumber} ${addy.street} in ${addy.city}, ${addy.state}.`);
+  if (addy) {
+    console.log(`They live at ${addy.streetNumber} ${addy.street} in ${addy.city}, ${addy.state}.`);
+  }
+  return s.id || "No ID provided."
 }
 
 const you: Student = {
-
+  name: "Dillon Scott",
+  year: "third"
 }
 
 doxx(you);
