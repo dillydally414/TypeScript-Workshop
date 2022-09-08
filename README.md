@@ -8,4 +8,4 @@
 
 ## Running a File
 
--- Run `ts-node {file}` in the terminal
+- Run `ts-node {file}` in the terminal
